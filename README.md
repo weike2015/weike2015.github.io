@@ -1,24 +1,27 @@
-## SB Admin v2.0 rewritten in AngularJS
+# [Start Bootstrap](http://startbootstrap.com/) - [SB Admin 2](http://startbootstrap.com/template-overviews/sb-admin-2/)
 
-[![Join the chat at https://gitter.im/start-angular/sb-admin-angular](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/start-angular/sb-admin-angular?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[SB Admin 2](http://startbootstrap.com/template-overviews/sb-admin-2/) is an open source, admin dashboard template for [Bootstrap](http://getbootstrap.com/) created by [Start Bootstrap](http://startbootstrap.com/).
 
-This project is a port of the famous Free Admin Bootstrap Theme [SB Admin v2.0](http://startbootstrap.com/template-overviews/sb-admin-2/) to Angular Theme.
+## Getting Started
 
-Find out more [Free Angular Themes at StartAngular.com](http://www.startangular.com/).
+To use this template, choose one of the following options to get started:
+* Download the latest release on Start Bootstrap
+* Fork this repository on GitHub
+* Install via bower using `bower install startbootstrap-sb-admin-2`
 
-## Installation
-1. Clone this project or Download that ZIP file
-2. Make sure you have [bower](http://bower.io/), [grunt-cli](https://www.npmjs.com/package/grunt-cli) and  [npm](https://www.npmjs.org/) installed globally
-3. On the command prompt run the following commands
-- cd `project-directory`
-- `npm install` - bower install is ran from the postinstall
-- `npm start` - a shortcut for `grunt serve`
-- `npm run dist` - a shortcut for `grunt serve:dist` to minify the files for deployment
+## Bugs and Issues
 
-## Roadmap
+Have a bug or an issue with this template? [Open a new issue](https://github.com/IronSummitMedia/startbootstrap-sb-admin-2/issues) here on GitHub or leave a comment on the [template overview page at Start Bootstrap](http://startbootstrap.com/template-overviews/sb-admin-2/).
 
-- Add sample AJAX calls and make the directives more modular
+## Creator
 
-### Automation tools
+Start Bootstrap was created by and is maintained by **David Miller**, Managing Parter at [Iron Summit Media Strategies](http://www.ironsummitmedia.com/).
 
-- [Grunt](http://gruntjs.com/)
+* https://twitter.com/davidmillerskt
+* https://github.com/davidtmiller
+
+Start Bootstrap is based on the [Bootstrap](http://getbootstrap.com/) framework created by [Mark Otto](https://twitter.com/mdo) and [Jacob Thorton](https://twitter.com/fat).
+
+## Copyright and License
+
+Copyright 2013-2015 Iron Summit Media Strategies, LLC. Code released under the [Apache 2.0](https://github.com/IronSummitMedia/startbootstrap-sb-admin-2/blob/gh-pages/LICENSE) license.
