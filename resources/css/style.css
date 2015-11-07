@@ -1,0 +1,228 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.mainBox {
+	margin: 20px auto;
+	width: 595px;
+	border: #288984 solid 3px;
+	border-radius: 25px;
+	background: rgba(178,249,245,1);
+	background: -moz-linear-gradient(top, rgba(178,249,245,1) 0%, rgba(116,226,222,1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(178,249,245,1)), color-stop(100%, rgba(116,226,222,1)));
+	background: -webkit-linear-gradient(top, rgba(178,249,245,1) 0%, rgba(116,226,222,1) 100%);
+	background: -o-linear-gradient(top, rgba(178,249,245,1) 0%, rgba(116,226,222,1) 100%);
+	background: -ms-linear-gradient(top, rgba(178,249,245,1) 0%, rgba(116,226,222,1) 100%);
+	background: linear-gradient(to bottom, rgba(178,249,245,1) 0%, rgba(116,226,222,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b2f9f5', endColorstr='#74e2de', GradientType=0 );
+	text-align: center
+}
+
+.promptContainer {
+	height:100%;
+}
+
+.alphabetForm {
+	border-top: 3px solid #288984;
+    background-color: #FFDA5B;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.pairwiseSums {
+	margin: 20px auto;
+	width: 286px;
+	min-height:58px;
+	background-color: #fff;
+	-webkit-box-shadow: 0px 0px 20px -1px rgba(74,74,74,1);
+	-moz-box-shadow: 0px 0px 20px -1px rgba(74,74,74,1);
+	box-shadow: 0px 0px 20px -1px rgba(74,74,74,1);
+	text-align: center
+}
+
+.pairwise {
+	margin-top: 5px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 50px;
+	color: #666666
+}
+
+.pairwise .small {
+	font-size:0.5em;
+	padding-top: 14px;
+	display:block;
+}
+
+.message {
+	margin: 10px 0;
+	color: #4D4D4D;
+}
+
+.questions {
+	margin-top: 15px;
+	width: 100%;
+}
+
+.questionAnswer {
+	height: 46px;
+	display: inline-block;
+	margin-left: 14px
+}
+
+.letter {
+	padding: 0 5px;
+	height: 42px;
+	border: #666 solid 2px;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+	font-family: "Arial Black", Gadget, sans-serif;
+	font-size: 28px;
+	float: left;
+	text-align: center;
+	color: #4d4d4d;
+	background: rgba(238,238,238,1);
+	background: -moz-linear-gradient(top, rgba(238,238,238,1) 0%, rgba(173,171,171,1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(238,238,238,1)), color-stop(100%, rgba(173,171,171,1)));
+	background: -webkit-linear-gradient(top, rgba(238,238,238,1) 0%, rgba(173,171,171,1) 100%);
+	background: -o-linear-gradient(top, rgba(238,238,238,1) 0%, rgba(173,171,171,1) 100%);
+	background: -ms-linear-gradient(top, rgba(238,238,238,1) 0%, rgba(173,171,171,1) 100%);
+	background: linear-gradient(to bottom, rgba(238,238,238,1) 0%, rgba(173,171,171,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#adabab', GradientType=0 );
+}
+
+.answer {
+	width: 42px;
+	height: 40px;
+	border: #666 solid 2px;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	background-color: #fff;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 28px;
+	float: left;
+	text-align: center;
+	color: #58c6c1;
+}
+
+.noAnswer {
+	background: #d84444;
+	color: #fff;
+}
+
+.submit {
+	margin: 20px auto;
+	width: 148px;
+	height: 57px;
+	border: #8eb24f solid 2px;
+	border-radius: 10px;
+	font-family: "Arial Black", Gadget, sans-serif;
+	font-size: 28px;
+	color: #8aa54e;
+	position: relative;
+	cursor: pointer;
+	background: rgba(218,255,169,1);
+	background: -moz-linear-gradient(top, rgba(218,255,169,1) 0%, rgba(165,204,98,1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(218,255,169,1)), color-stop(100%, rgba(165,204,98,1)));
+	background: -webkit-linear-gradient(top, rgba(218,255,169,1) 0%, rgba(165,204,98,1) 100%);
+	background: -o-linear-gradient(top, rgba(218,255,169,1) 0%, rgba(165,204,98,1) 100%);
+	background: -ms-linear-gradient(top, rgba(218,255,169,1) 0%, rgba(165,204,98,1) 100%);
+	background: linear-gradient(to bottom, rgba(218,255,169,1) 0%, rgba(165,204,98,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#daffa9', endColorstr='#a5cc62', GradientType=0 );
+}
+
+.submitContainer {
+	clear: both;
+}
+
+.submit:hover {
+	border: #53721d solid 2px;
+	color: #53721d;
+	background: rgba(185,255,105,1);
+	background: -moz-linear-gradient(top, rgba(185,255,105,1) 0%, rgba(122,173,45,1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(185,255,105,1)), color-stop(100%, rgba(122,173,45,1)));
+	background: -webkit-linear-gradient(top, rgba(185,255,105,1) 0%, rgba(122,173,45,1) 100%);
+	background: -o-linear-gradient(top, rgba(185,255,105,1) 0%, rgba(122,173,45,1) 100%);
+	background: -ms-linear-gradient(top, rgba(185,255,105,1) 0%, rgba(122,173,45,1) 100%);
+	background: linear-gradient(to bottom, rgba(185,255,105,1) 0%, rgba(122,173,45,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b9ff69', endColorstr='#7aad2d', GradientType=0 );	
+}
+
+.completeMessage {
+	font-size: 30px;
+	color:#565656;  
+	position: relative;
+    vertical-align: middle;
+    top: 40%;
+	padding:30px;
+}
+
+/* small screen css styles */
+
+@media (max-width: 768px) {
+	
+body {
+	height: 100%;
+}
+
+html {
+	height: 100%
+}
+
+.mainBox {
+	width: 100%;
+	border-radius: 0;
+	border: none;
+	position: absolute;
+	height:100%;
+	margin: 0 auto;
+	min-width: 320px;
+}
+
+.alphabetForm {
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+	height:78%;
+	position: absolute;
+}
+
+.pairwiseSums {
+
+}
+
+.questions {
+	margin: 25px auto 0 auto;
+    height: 100px;
+    width: 315px;
+    display: inline;
+}
+
+.questionAnswer {
+	height: 55px;
+	margin-right: 10px;
+	margin-bottom: 15px
+}
+
+.letter {
+	height: 54px;
+	font-size: 38px
+}
+
+.answer {
+	width: 62px;
+	height: 52px;
+	font-size: 47px;
+}
+
+.submit {
+	margin: auto;
+	width: 176px;
+	height: 68px;
+	font-size: 33px
+}
+
+}

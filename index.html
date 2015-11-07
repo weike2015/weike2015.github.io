@@ -1,13 +1,53 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="alphabetGame">
 <head>
-<meta http-equiv="refresh" content="0;url=pages/index.html">
-<title>SB Admin 2</title>
-<script language="javascript">
-    window.location.href = "pages/login.html"
-</script>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Alphabets and Equations</title>
+	<link rel="stylesheet" type="text/css" href="resources/css/style.css">
+	<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
+	<script src="resources/js/constants.js"></script>
+	<script src="resources/js/controllers.js"></script>
+	<base href="/">
 </head>
-<body>
-Go to <a href="pages/index.html">/pages/index.html</a>
+<body ng-controller="ProblemCtrl">
+<div class="mainBox">
+	<div class="promptContainer" ng-show="!complete">
+		<div class="message">{{promptMessage}} </div>
+		<div class="pairwiseSums">
+			<div ng-repeat="equation in problem" ng-show="!xhrInProgress" class="pairwise">
+				{{equation[0]}} + {{equation[1]}} = {{equation[2]}}
+			</div>
+			<div ng-show="xhrInProgress" class="pairwise"><span class="small">Loading...</span></div>
+		</div>
+		<form name="alphabetForm" class="alphabetForm" novalidate>
+			<div class="message">Guess the letters: </div>
+			<div class="questions">
+			  <div ng-repeat="variable in variables track by $index" class="questionAnswer">        
+					<div class="letter">{{variable}}=</div>
+					<input type="number" 
+							id="{{variable}}" 
+							name="{{variable}}" 
+							min="0"
+							max="1"
+							placeholder="?"
+							class="answer"
+							ng-model="answers[$index]"  
+							ng-class="{noAnswer: validationFailed && (
+								alphabetForm.{{variable}}.$error.required || 
+								alphabetForm.{{variable}}.$error.min || 
+								alphabetForm.{{variable}}.$error.max)}"
+							required />
+				</div>
+			</div> <!-- End of questions -->
+			<div class="submitContainer">
+				<button ng-click="submitAnswer()" class="submit" ng-disabled="xhrInProgress">Check</button>
+			</div>
+		</div>
+		
+		<div ng-show="complete" class="completeMessage">You did it!<br/> Your MTurk code is <br><small><b>alphabet-{{username}}</b></small></div>
+	</form>
+</div> <!-- End of mainBox --> 
 </body>
 </html>
